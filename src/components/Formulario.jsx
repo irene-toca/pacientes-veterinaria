@@ -31,14 +31,22 @@ const Formulario = ({pacientes, setPacientes}) => {
       nombre, 
       propietario, 
       email,
-     fecha, 
-     sintomas
+      fecha, 
+      sintomas
     }
      //console.log(objetoPaciente)
 
     
 
      setPacientes([...pacientes, objetoPaciente])
+
+     //reiniciar el form
+     setNombre('')
+     setPropietario('')
+     setEmail('')
+     setFecha('')
+     setSintomas('')
+
 
     }
 
